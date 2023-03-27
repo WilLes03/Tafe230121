@@ -12,10 +12,10 @@
 		<Image x:Name="logoImage" HorizontalAlignment="Left" Height="100" Margin="1400,0,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/abacus.PNG"/>
 		<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
             <TextBlock x:Name="header" Text="Universal Calculator" FontSize="80" FontWeight="Bold" Foreground="DarkBlue"/>
-            <Button x:Name="mathCalculatorButton" Content="Maths Calculator" FontSize="50" Foreground="Black" Background="LightGray" HorizontalAlignment="Center" Margin="20" Width="500" Height="150"/>
-            <Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" FontSize="50" Foreground="Black" Background="LightGray" HorizontalAlignment="Center" Margin="20" Width="500" Height="150"/>
+            <Button x:Name="mathCalculatorButton" Content="Maths Calculator" FontSize="50" Foreground="Black" Background="LightGray" HorizontalAlignment="Center" Margin="20" Width="500" Height="150" Click="mathCalculatorButton_Click"/>
+            <Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" FontSize="50" Foreground="Black" Background="LightGray" HorizontalAlignment="Center" Margin="20" Width="500" Height="150" Click="mortgageCalculatorButton_Click"/>
             <Button x:Name="currencyCoverterButton" Content="Currency Calculator" FontSize="50" Foreground="Black" Background="LightGray" HorizontalAlignment="Center" Margin="20" Width="500" Height="150"/>
-            <Button x:Name="exitButton" Content="Exit" FontSize="50" Foreground="Black" Background="LightGray" HorizontalAlignment="Center" Margin="20" Width="500" Height="150"/>
+            <Button x:Name="exitButton" Content="Exit" FontSize="50" Foreground="Black" Background="LightGray" HorizontalAlignment="Center" Margin="20" Width="500" Height="150" Click="exitButton_Click"/>
         </StackPanel>
         
 

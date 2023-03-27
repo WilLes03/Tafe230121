@@ -6,41 +6,41 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    >
 
     <Grid Background="White">
 		<StackPanel Orientation="Vertical">
 			<StackPanel>
-				<TextBlock x:Name="headerTextBlock" Text="Mortgage Calcualtor" FontSize="100" Foreground="Black" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"/>
+				<TextBlock x:Name="headerTextBlock" Text="Mortgage Calculator" FontSize="100" Foreground="Black" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"/>
 			</StackPanel>
 			<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
 				<StackPanel Orientation="Horizontal"  HorizontalAlignment="Right">
 					<TextBlock x:Name="principalBorrowTextBlock" Text="Principal Borrow $:" FontSize="40" Foreground="Black" Margin="5"/>
-					<TextBox x:Name="principalBorrowTextBox" FontSize="40" Width="300" Margin="5" HorizontalAlignment="Right"/>
+					<TextBox x:Name="principalBorrowTextBox" FontSize="40" Width="300" Margin="5" Background="White" BorderBrush="Gray"/>
 				</StackPanel>
 				<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
 					<TextBlock x:Name="yearsTextBlock" Text="Years:" FontSize="40" Foreground="Black" Margin="5"/>
-					<TextBox x:Name="yearsTextBox" FontSize="40" Width="300" Margin="5" TextChanged="yearsTextBox_TextChanged"/>
+					<TextBox x:Name="yearsTextBox" FontSize="40" Width="300" Margin="5" Background="White" BorderBrush="Gray"/>
 				</StackPanel>
 				<StackPanel Orientation="Horizontal"  HorizontalAlignment="Right">
 					<TextBlock x:Name="monthsTextBlock" Text="Months:" FontSize="40" Foreground="Black" Margin="5"/>
-					<TextBox x:Name="monthsTextBox" FontSize="40" Width="300" Margin="5"/>
+					<TextBox x:Name="monthsTextBox" FontSize="40" Width="300" Margin="5"  Background="White" BorderBrush="Gray"/>
 				</StackPanel>
 				<StackPanel Orientation="Horizontal"  HorizontalAlignment="Right">
 					<TextBlock x:Name="yearlyInterestTextBlock" Text="Yearly Interest Rate:" FontSize="40" Foreground="Black" Margin="5"/>
-					<TextBox x:Name="yearlyInterestTextBox" FontSize="40" Width="300" Margin="5"/>
+					<TextBox x:Name="yearlyInterestTextBox" FontSize="40" Width="300" Margin="5" Background="White" BorderBrush="Gray"/>
 				</StackPanel>
 				<StackPanel Orientation="Horizontal"  HorizontalAlignment="Right">
 					<TextBlock x:Name="monthlyInterestTextBlock" Text="Monthly Interest Rate:" FontSize="40" Foreground="Black" Margin="5"/>
-					<TextBox x:Name="monthlyInterestTextBox" FontSize="40" Width="300" Margin="5"/>
+					<TextBox x:Name="monthlyInterestTextBox" FontSize="40" Width="300" Margin="5" IsReadOnly="True"/>
 				</StackPanel>
 				<StackPanel Orientation="Horizontal"  HorizontalAlignment="Right">
 					<TextBlock x:Name="monthlyRepaymentTextBlock" Text="Monthly Repayment $:" FontSize="40" Foreground="Black" Margin="5"/>
-					<TextBox x:Name="monthlyRepaymentTextBox" FontSize="40" Width="300" Margin="5"/>
+					<TextBox x:Name="monthlyRepaymentTextBox" FontSize="40" Width="300" Margin="5"  IsReadOnly="True"/>
 				</StackPanel>
 				<StackPanel Orientation="Vertical" Margin="0 50 0 0">
-					<Button x:Name="calculateButton" Content="Calculate" FontSize="60" Foreground="Black" HorizontalAlignment="Center" Background="LightGray"  Margin="10" Padding="10" Width="300"/>
-					<Button x:Name="exitButton" Content="Exit" FontSize="60" Foreground="Black" HorizontalAlignment="Center" Background="LightGray"  Margin="10"  Padding="10"  Width="300"/>
+					<Button x:Name="calculateButton" Content="Calculate" FontSize="60" Foreground="Black" HorizontalAlignment="Center" Background="LightGray"  Margin="10" Padding="10" Width="300" Click="calculateButton_Click"/>
+					<Button x:Name="exitButton" Content="Exit" FontSize="60" Foreground="Black" HorizontalAlignment="Center" Background="LightGray"  Margin="10"  Padding="10"  Width="300" Click="exitButton_Click"/>
 				</StackPanel>
 			</StackPanel>
 		</StackPanel>
