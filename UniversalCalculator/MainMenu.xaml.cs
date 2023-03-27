@@ -41,12 +41,10 @@ namespace Calculator
 		{
 			Application.Current.Exit();
 		}
-	}
-=======
 		private void currencyCoverterButton_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(CurrencyCalculator));
 		}
-    }
->>>>>>> featureCurrencyCalculator
+	}
+
 }
